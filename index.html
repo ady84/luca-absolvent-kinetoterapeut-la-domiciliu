@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica Luca</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <header id="logo" class="sticky-top">
+    <img id="logo-image" src="/images/logo.png" alt="Logo">
+    <span id="logo-text" class="bold">CLINICA &nbsp;'LUCA'</span>
+  </header>
+  <nav class="sticky-100">
+    <ul>
+      <li class="link"><a href="#despre">Despre noi</a></li>
+      <li class="link"><a href="#recenzii">Recenzii</a></li>
+      <li class="link"><a href="#contact">Contact</a></li>
+      <li class="link"><a href="galerie.html">Galerie Foto</a></li>
+      <li class="link"><a href="parola.html">Panel</a></li>
+    </ul>
+  </nav>
+  <h1 id="title">Bine ati venit in clinica noastra!</h1>
+  <section id="despre">
+    <h2>Despre noi</h2>
+    <p>Istoria clinicii <span class="bold">LUCA</span> incepe inca din anul 2022. In data de 3 iulie, <br> Dr. <span class="bold">ginecolog</span> autorizat <span class="bold">Luca Nitulescu</span> isi termina primul an la facultatea renumita in Europa, <span class="bold">UNEFS</span>. <br> <span class="bold">Licentiat</span> fiind, poate sa isi deschida clinica sa, unde este propriul sef si poate derula lucrurile in felul sau. Astfel, <span class="bold">Luca Nitulescu</span> reuseste sa stranga peste <span class="bold">500 de clienti</span> multumiti la activ.</p>
+  </section>
+  <section id="recenzii">
+    <h2>Ce spun clientii nostrii:</h2>
+    <div class="rating">
+      <div class="rating-user">
+        <h3>Florin, 69 de ani</h3>
+        <div class="rating-display">
+          <img src="/images/fullstar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+        </div>
+      </div>
+      <p>Nu recomand!! Dl Luca Nitulescu a spus ca im poate ajuta problema cu spatele insa nu a reusit decat sa ma trimita la urgente! Fugiti cat vedeti cu ochii de aceasta clinica de masoni</p>
+    </div>
+    <div class="rating">
+      <div class="rating-user">
+        <h3>Geta, 62 de ani</h3>
+        <div class="rating-display">
+          <img src="/images/fullstar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+          <img src="/images/emptystar.png" alt="1/5">
+        </div>
+      </div>
+      <p>Ma nenorocit</p>
+    </div>
+    <div class="rating">
+      <div class="rating-user">
+        <h3>Ionut, 21 de ani</h3>
+        <div class="rating-display">
+          <img src="/images/fullstar.png" alt="5/5">
+          <img src="/images/fullstar.png" alt="5/5">
+          <img src="/images/fullstar.png" alt="5/5">
+          <img src="/images/fullstar.png" alt="5/5">
+          <img src="/images/fullstar.png" alt="5/5">
+        </div>
+      </div>
+      <p>Cea mai tare clinica, mi-a indreptat coloana, mergeti cu incredere!</p>
+    </div>
+    </section>
+    <section id="contact">
+      <h2>Luati legatura cu noi</h3>
+      <p>Pentru programari la sediu sau domiciliu, sau pentru orice alte intrebari, va rugam sa completati acest forumlar. Va multumim!</p>
+      <form action="#" method="POST">
+        <div id="top">
+          <div class="input">
+            <label for="name">Nume:</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input">
+            <label for="firstname">Prenume:</label>
+            <input type="text" name="firstname" id="firstname">
+          </div>
+        </div>
+        <div id="bottom">
+          <div class="input">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input">
+            <label for="tel">Numar telefon:</label>
+            <input type="tel" name="tel" id="tel">
+          </div>
+        </div>
+        <div class="input" id="textarea">
+          <label for="msg">Mesajul dumneavoastra:</label>
+          <textarea name="msg" id="msg" cols="50" rows="10"></textarea>
+        </div>
+        <div class="input" id="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" checked>
+          <label for="checkbox">Sunt de acord sa primesc promotii pe email si prin SMS de la Luca Nitulescu</label>
+        </div>
+        <div class="input" id="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" checked>
+          <label for="checkbox">Sunt de acord sa transmit datele personale confidentiale catre Clinica Luca</label>
+        </div>
+        <div class="input" id="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" checked>
+          <label for="checkbox">Sunt de acord sa ma abonez pentru suma modica de 1500 lei/luna la Clinica Luca Spa si Wellness</label>
+        </div>
+        <div id="btn">
+          <button id="submit" class="input" type="submit">Trimiteti</button>
+        </div>
+      </form>
+    </section>
+  <footer class="sticky-bottom">
+    <h4>Copyright Clinica Luca 2022 - folosim cookies pentru a colecta datele confidentiale geriatricilor</h4>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --section-margin: 80px;
+    --header--margin: 15px;
+    --general-padding: 0 20%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4em;
+}
+
+html { scroll-padding-top: 160px; }
+ 
+body {
+    background-color: #eaeaea;
+    scroll-behavior: smooth;
+}
+
+.bold { font-weight: 800; }
+
+/* LOGO */
+header {
+    display: flex;
+    gap: 15px;
+}
+
+#logo {
+    background-color: rgb(60, 100, 140);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+#logo-image { height: 100px; }
+
+#logo-text { font-size: 50px; }
+
+/* NAVBAR */
+:link, :visited { color: white; }
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.link:hover { background-color: rgb(75, 125, 175); }
+
+nav > ul {
+    background-color: rgb(60, 100, 140);
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .link {
+    flex: 1;
+    text-align: center;
+}
+
+/* CONTENT */
+#title {
+    text-align: center;
+    padding: 2em;
+}
+
+#despre, #recenzii, #contact {
+    padding: var(--general-padding);
+    margin-bottom: var(--section-margin);
+}
+
+#despre h2, #contact h2, #recenzii h2, h3 {
+    margin-bottom: var(--header--margin);
+}
+
+.rating, #despre p, #contact p, form, footer, #login {
+    background-color: rgb(60, 100, 140);
+    padding: 1.5em;
+    color: white;
+}
+
+.rating { margin-bottom: calc(var(--header--margin) * 2); }
+
+/* RECENZII */
+.rating-user {
+    display: flex;
+    gap: 20px;
+}
+
+#recenzii img { height: 25px; }
+
+.rating-display > img { margin-right: -8px; }
+
+/* STICKY */
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+.sticky-100 {
+    position: sticky;
+    top: 100px;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0px;
+}
+
+/* FORM */
+form {
+    display: block;
+    margin-top: -25px;
+}
+label { display: table-cell; }
+textarea { display: block; }
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    display: table-cell;
+}
+
+#top, #bottom {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(75, 125, 175);
+}
+
+#textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    background-color: rgb(75, 125, 175);
+    padding: 10px;
+}
+
+#checkbox {
+    display: flex;
+    gap: 15px;
+    padding: 5px 40px 10px 40px;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+#submit {
+    border: 2px solid rgb(100, 150, 200);
+    color: white;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 4px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* GALERIE */
+#pictures {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#pictures > img {
+    height: 400px;
+    width: 700px;
+}
+
+/* SCREEN SIZE */
+@media screen and (min-width: 1200px) {
+    #despre, #recenzii, #contact { padding: 0 25%; }
+}
+
+@media screen and (max-width: 777px) {
+    #top, #bottom {
+        flex-direction: column;
+    }
+}
