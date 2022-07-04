@@ -58,6 +58,7 @@ nav > ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    padding: 0 15%;
 }
 
 nav .link {
@@ -205,5 +206,8 @@ footer {
 @media screen and (max-width: 777px) {
     #top, #bottom {
         flex-direction: column;
+    }
+    textarea {
+        max-width: 250px;
     }
 }
